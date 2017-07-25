@@ -1,4 +1,4 @@
-{
+(function(){
 	// const createCube = () => {
 	//   const template = document.getElementById("cube-template");
 	//   const fragment = document.importNode(template.content, true);
@@ -22,6 +22,8 @@
 	    translateZ(${size / 2}px)
 	  `;
 	};
+
+
 
 	const interpolate = (a, b, i) => a * (1 - i) + b * i;
 
@@ -48,9 +50,5 @@
 	  const [r, g, b] = tint.color.map(blend);
 	  return `rgb(${r}, ${g}, ${b})`;
 	};
-}
 
-window.requestAnimationFrame(getDistance)
-
-getDistance()
-getRotation()
+}());
