@@ -103,6 +103,7 @@
 
 	// 2d Drawing Context.
 	var ctx = canvas.getContext('2d');
+	console.log(ctx)
 
 	// Set the fill style for the drawing context.
 	ctx.fillStyle = '#21221';
